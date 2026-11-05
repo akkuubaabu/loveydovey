@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Baby, Choose Carefully 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="floating f1">♡</div><div class="floating f2">✦</div><div class="floating f3">♥</div>
+  <main class="app">
+    <header class="brand">♡ A LITTLE QUIZ FOR MY FAVOURITE HUMAN ♡</header>
+
+    <section class="page active" id="welcome">
+      <div class="mascot">ʕ♡ᴥ♡ʔ</div>
+      <p class="eyebrow">A tiny break from work</p>
+      <h1>Hi, handsome!<br><span>Miss me?</span></h1>
+      <p class="quote">“Even on your busiest day, I hope you find a little moment to smile… preferably because of me.”</p>
+      <p class="description">I have 8 very important questions for you. Answer honestly. I'm definitely not going to judge you. 🤭</p>
+      <button class="main-btn" id="begin">Start the quiz ♡</button>
+      <p class="tiny">P.S. There may be consequences. 💅</p>
+    </section>
+
+    <section class="page" id="questionPage">
+      <div class="meta"><span class="tag">LOVE TEST 💌</span><span id="count">01 / 08</span></div>
+      <div class="track"><div id="bar"></div></div>
+      <article class="question-card">
+        <div class="emoji" id="emoji">👯‍♀️</div>
+        <p class="eyebrow">QUESTION <span id="number">01</span></p>
+        <h2 id="question">Would you love my twin?</h2>
+        <p class="hint">Think carefully, baby. 👀</p>
+        <div class="choices">
+          <button class="choice" data-answer="yes">YES 💗</button>
+          <button class="choice" data-answer="no">NO 🙈</button>
+        </div>
+        <div class="reaction hidden" id="reaction" aria-live="polite">
+          <span class="reaction-label">HMMM... EXPLAIN THIS, BABY</span>
+          <p id="reactionText"></p>
+          <span class="change-note">Changed your mind? Tap the other answer. 😇</span>
+        </div>
+      </article>
+      <button class="next-btn" id="next" disabled>Next question →</button>
+      <p class="tiny">No answer can save you. I love you though. ♡</p>
+    </section>
+
+    <section class="page ending" id="ending">
+      <div class="big-heart">💗</div>
+      <p class="eyebrow">OFFICIAL RESULTS</p>
+      <h1>Still my<br><span>favourite person.</span></h1>
+      <div class="letter">
+        <p>Congratulations, baby. You survived my extremely serious investigation. 🥹</p>
+        <p>I was only trying to steal a little bit of your attention and make you smile during your busy day.</p>
+        <p>No matter what you answered, you're my favourite person to annoy, laugh with, and love. I don't need perfect answers. I just want you — today, tomorrow, and all the ordinary days in between.</p>
+        <p class="signoff">Now get back to work, handsome. I love you endlessly. ♡</p>
+      </div>
+      <button class="main-btn" id="again">Annoy me back? ↻</button>
+      <p class="tiny">Made with love, mischief & too many hearts.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

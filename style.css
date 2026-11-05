@@ -1,0 +1,45 @@
+*{box-sizing:border-box}
+:root{--pink:#e879a0;--deep:#a34e70;--ink:#5e3b4e;--muted:#a18191}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px 14px;background:radial-gradient(circle at 12% 15%,#ffe0eb 0,transparent 30%),radial-gradient(circle at 88% 85%,#f8dce8 0,transparent 28%),linear-gradient(135deg,#fff8f6,#fff0f6);font-family:"DM Sans",sans-serif;color:var(--ink);overflow-x:hidden}
+.app{width:min(100%,500px);background:rgba(255,255,255,.88);border:1px solid white;border-radius:30px;padding:25px clamp(19px,5vw,36px) 27px;box-shadow:0 22px 70px #a94e741c;position:relative;z-index:1}
+.brand{text-align:center;color:#c47b98;font:700 10px "Quicksand";letter-spacing:1.7px;margin:2px 0 20px}
+.page{display:none;animation:fade .35s ease}.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+.mascot{width:132px;height:132px;margin:12px auto 18px;border-radius:50%;display:grid;place-items:center;background:#ffe8f0;border:1px solid #fbd3e1;color:#b96e8b;font:700 35px "Quicksand";box-shadow:0 10px 25px #e8a8c01c;transform:rotate(-4deg)}
+.eyebrow{text-align:center;color:#c47b98;font:700 10px "Quicksand";letter-spacing:2px;margin:10px 0}
+h1,h2{font-family:"Quicksand";text-align:center;line-height:1.18;color:#603c50}
+h1{font-size:clamp(34px,8vw,43px);letter-spacing:-1px;margin:8px 0 15px}
+h1 span{color:var(--pink)}
+.quote{text-align:center;color:#8d6a7c;font:600 15px/1.65 "Quicksand";margin:0 3px 15px}
+.description{text-align:center;color:#9a7b8b;font-size:13px;line-height:1.7;margin:0 auto 23px;max-width:350px}
+.main-btn,.next-btn{width:100%;border:0;border-radius:15px;padding:15px 18px;font:700 14px "Quicksand";cursor:pointer;transition:.2s}
+.main-btn{background:linear-gradient(135deg,#f092b2,#dc7099);color:white;box-shadow:0 8px 19px #dc709933}
+.main-btn:hover,.next-btn:not(:disabled):hover{transform:translateY(-2px)}
+.tiny{text-align:center;color:#b293a2;font-size:10px;margin:14px 0 0}
+.meta{display:flex;justify-content:space-between;align-items:center;margin:8px 0 12px;color:#ad8497;font:700 11px "Quicksand"}
+.tag{background:#fff0f5;padding:8px 11px;border-radius:30px;color:#c16e91;letter-spacing:1px;font-size:9px}
+.track{height:6px;background:#f8e4ec;border-radius:20px;overflow:hidden;margin-bottom:20px}
+#bar{height:100%;width:12.5%;background:linear-gradient(90deg,#f4a2bd,#dc7099);border-radius:20px;transition:width .3s}
+.question-card{background:linear-gradient(150deg,#fffafd,#fff1f6);border:1px solid #f7dce6;border-radius:23px;padding:21px 17px 19px;text-align:center}
+.emoji{font-size:39px;margin:0 0 9px}
+.question-card .eyebrow{margin:0 0 10px;font-size:9px}
+h2{font-size:clamp(22px,5.5vw,27px);margin:0 auto 9px;max-width:360px}
+.hint{font-size:11px;color:#a48696;margin:0 0 18px}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.choice{padding:13px 8px;border-radius:13px;border:1px solid #efc7d7;background:white;color:#955d76;font:700 13px "Quicksand";cursor:pointer;transition:.18s}
+.choice:hover{background:#ffedf3;transform:translateY(-1px)}
+.choice.selected{background:#fce0ea;border:2px solid #df82a3;color:#8d4565;box-shadow:0 4px 12px #e68baa22}
+.reaction{margin-top:16px;padding:15px 13px 12px;background:#fff;border:1px dashed #edb5ca;border-radius:15px;animation:fade .25s ease}
+.hidden{display:none}
+.reaction-label{font:700 9px "Quicksand";letter-spacing:1.2px;color:#c27a98}
+#reactionText{font:700 16px/1.45 "Quicksand";color:#80516a;margin:7px 0}
+.change-note{font-size:10px;color:#b08b9c}
+.next-btn{margin-top:15px;background:#fceaf1;color:#b45f83;border:1px solid #f3d2df}
+.next-btn:disabled{opacity:.45;cursor:not-allowed}
+.ending{text-align:center;padding-top:14px}
+.big-heart{font-size:61px;margin:6px 0 12px}
+.letter{text-align:left;background:#fff5f8;border:1px solid #f7dce6;border-radius:19px;padding:17px 18px;color:#89677a;font-size:12px;line-height:1.75;margin:20px 0}
+.letter p{margin:0 0 11px}.letter p:last-child{margin:0}
+.signoff{color:#bf6689;font-weight:700}
+.floating{position:fixed;color:#dc8bab66;pointer-events:none}.f1{left:8%;top:12%;font-size:34px}.f2{right:9%;top:20%;font-size:28px}.f3{right:8%;bottom:12%;font-size:37px}
+@media(max-width:420px){.app{padding:21px 17px 23px;border-radius:25px}.mascot{width:115px;height:115px;font-size:31px}.question-card{padding:19px 13px}.choice{font-size:12px}}
